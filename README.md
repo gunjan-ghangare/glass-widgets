@@ -53,7 +53,7 @@ Without Blur My Shell, cards will still display with frosted glass styling, but 
 
 ```bash
 git clone https://github.com/peter-njoro/glass-widgets.git
-ln -s $(pwd) ~/.local/share/gnome-shell/extensions/glass-widgets-dev@peter-njoro.github.io
+ln -s $(pwd) ~/.local/share/gnome-shell/extensions/glass-widgets@peter-njoro.github.io
 ```
 
 ## License
