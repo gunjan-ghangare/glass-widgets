@@ -13,6 +13,10 @@
       <default>true</default>
       <summary>Show weather in the clock widget</summary>
     </key>
+    <key type="b" name="show-music">
+      <default>true</default>
+      <summary>Show music player widget</summary>
+    </key>
     <key type="b" name="weather-auto-location">
       <default>true</default>
       <summary>Automatically detect the weather location</summary>

@@ -80,3 +80,115 @@
 .glass-stats-gauges {
   spacing: 32px;
 }
+
+/* Music Widget Styles - Modern Polaris Style */
+.glass-music-card {
+  min-width: 400px;
+  max-width: 400px;
+  spacing: 0px;
+  padding: 16px 20px;
+}
+
+.glass-music-main {
+  spacing: 16px;
+}
+
+.glass-music-album-art-bin {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+.glass-music-album-art {
+  icon-size: 64px;
+  border-radius: 50%;
+}
+
+.glass-music-right {
+  spacing: 8px;
+}
+
+.glass-music-track {
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  font-family: sans-serif;
+}
+
+.glass-music-artist {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: sans-serif;
+  margin-bottom: 4px;
+}
+
+.glass-music-progress-box {
+  spacing: 10px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.glass-music-time {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.55);
+  font-family: monospace;
+}
+
+.glass-music-progress-bar {
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 2px;
+  min-width: 100px;
+}
+
+.glass-music-controls {
+  spacing: 8px;
+  margin-top: 4px;
+}
+
+.glass-music-button {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  padding: 6px;
+  width: 32px;
+  height: 32px;
+  transition-duration: 150ms;
+}
+
+.glass-music-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.glass-music-button:active {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.glass-music-button-play {
+  width: 36px;
+  height: 36px;
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-width: 1.5px;
+}
+
+.glass-music-button-play:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+.glass-music-player-badge {
+  font-size: 9px;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-left: auto;
+  padding: 4px 8px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}

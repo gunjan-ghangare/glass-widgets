@@ -40,6 +40,13 @@ export default class GlassWidgetsPreferences extends ExtensionPreferences {
         settings.bind('show-weather', showWeatherRow, 'active', 0);
         widgetsGroup.add(showWeatherRow);
 
+        const showMusicRow = new Adw.SwitchRow({
+            title: _('Music player widget'),
+            subtitle: _('Show now playing info and playback controls'),
+        });
+        settings.bind('show-music', showMusicRow, 'active', 0);
+        widgetsGroup.add(showMusicRow);
+
         // Weather page
         const weatherPage = new Adw.PreferencesPage({
             title: _('Weather'),

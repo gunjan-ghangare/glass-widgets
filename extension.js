@@ -15,6 +15,7 @@ import * as Main from 'resource:///org/gnome/shell/ui/main.js';
 
 import {GlassClockWidget} from './widgets/clock.js';
 import {GlassStatsWidget} from './widgets/stats.js';
+import {GlassMusicWidget} from './widgets/music.js';
 
 const POS_X_KEY = 'widget-x';
 const POS_Y_KEY = 'widget-y';
@@ -23,8 +24,9 @@ const BLUR_KEY = 'blur-enabled';
 const SHOW_CLOCK_KEY = 'show-clock';
 const SHOW_STATS_KEY = 'show-stats';
 const SHOW_WEATHER_KEY = 'show-weather';
+const SHOW_MUSIC_KEY = 'show-music';
 
-const STRUCTURAL_KEYS = [SHOW_CLOCK_KEY, SHOW_STATS_KEY, SHOW_WEATHER_KEY];
+const STRUCTURAL_KEYS = [SHOW_CLOCK_KEY, SHOW_STATS_KEY, SHOW_WEATHER_KEY, SHOW_MUSIC_KEY];
 
 export default class GlassWidgetsExtension extends Extension {
     enable() {
@@ -64,6 +66,9 @@ export default class GlassWidgetsExtension extends Extension {
         }
         if (this._settings.get_boolean(SHOW_STATS_KEY)) {
             this._widgets.push(new GlassStatsWidget());
+        }
+        if (this._settings.get_boolean(SHOW_MUSIC_KEY)) {
+            this._widgets.push(new GlassMusicWidget());
         }
     }
 
